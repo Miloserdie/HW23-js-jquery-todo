@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "value": "Посадить сына",
+      "status": "done",
+      "id": "qqnsfpw"
+    },
+    {
+      "value": "Построить дерево",
+      "status": "done",
+      "id": "khs8u8j"
+    },
+    {
+      "value": "Вырастить дом",
+      "status": "done",
+      "id": "rxqwchu"
+    }
+  ]
+}
