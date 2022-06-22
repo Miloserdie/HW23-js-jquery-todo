@@ -95,7 +95,7 @@ class TodoList{
 
 	findTasks(value) {
       this.render(
-          this.todos.filter(item => item.value.includes(value))
+         this.todos.filter(item => item.value.includes(value))
       );
   	}
 }
@@ -125,11 +125,11 @@ $('.form').on('click', '.find-task', (event) => {
 	todos.findTasks($('.task-text').val());
 })
 
-$('#list').on('click', '.delete-task', (event) => {
+$list.on('click', '.delete-task', (event) => {
 	todos.deleteTodo($(event.target).closest('.list-item').data('id'));
 })
 
-$('#list').on('click', '.change-status', (event) => {
+$list.on('click', '.change-status', (event) => {
 	todos.changeStatus($(event.target).closest('.list-item').data('id'));
 })
 
