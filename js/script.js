@@ -10,9 +10,7 @@ class TodoList{
 			dataType: 'json',
 		})
 		.done((data) => {
-			data.map((el) => {
-				this.todos.unshift(el);
-			})
+			this.todos = data.reverse()
 			this.render(this.todos);
 		})
 		.fail((err) => {
